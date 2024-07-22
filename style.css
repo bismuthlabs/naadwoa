@@ -1,0 +1,635 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-icon {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-underline-offset: 0.5em;
+    padding-bottom: 6px;
+    color: #fff;
+    /* background:
+        linear-gradient(
+        to right,
+        #000000,
+        rgb(255, 205, 205),
+        rgba(0, 0, 0, 1)
+    );
+    background-size: 100% 2px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms; */
+    opacity: .7;
+}
+
+header nav ul li a:hover {
+    background-size: 0 3px, 100% 3px;
+    color: #fff;
+    opacity: 1;
+}
+
+header .contact-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .logo {
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 800;
+    color: orangered;
+}
+
+.slide-menu {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1290px;
+    margin: auto;
+}
+
+.mobile-intro-text {
+    display: none;
+}
+
+.intro-text,
+.about-text {
+    max-width: 520px;
+}
+
+.intro-text h1,
+.intro-text h2 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+.intro-text h1 span,
+.about-text h2 span,
+.about-text h1 span {
+    color: orangered;
+}
+
+.intro-text .btn {
+    background-color: orangered;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.mobile-hero-image,
+.about-image {
+    border-radius: 101% / 145%;
+}
+
+.mobile-hero-image img,
+.about-image img {
+    max-width: 27rem;
+    height: 34rem;
+    border-radius: 53% / 53%;
+    object-fit: cover;
+}
+
+.intro .buttons {
+    margin-top: 26px;
+}
+
+.intro .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 50px 12px;
+}
+
+.about-me {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-me img {
+    width: 100vw;
+    height: 160%;
+    object-fit: cover;
+    position: absolute;
+    left: -25%;
+    bottom: -70%;
+    rotate: 20deg;
+}
+
+.about-me .overlay {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .overlay div {
+    max-width: 60vw;
+    text-align: center;
+}
+
+.about-me .overlay div h1 {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.about-me .overlay div h1 span {
+    color: orangered;
+}
+
+/* GENERIC SECTION */
+
+section {
+    margin-bottom: 8px;
+}
+
+section .section-title-wrapper {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+    max-width: 35vw;
+}
+
+.section-title h1 {
+    font-size: 44px;
+    font-weight: 900;
+    color: orangered;
+}
+
+section {
+    background-color: #f7f7f7;
+}
+
+section .wrapper {
+    padding: 50px 12PX;
+}
+
+section .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+section .card-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #fff;
+    max-width: 390px;
+    border-radius: 4px;
+    padding: 8px;
+    outline: 1px solid #0000000e;
+}
+
+section .card-wrapper div h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: auto;
+}
+
+
+/* EXPERIENCES & SKILLS */
+
+.experience .section-title-wrapper,
+.skills .section-title-wrapper {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+
+.skills .card-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience .card-wrapper {
+    flex-direction: column;
+}
+
+.experience .card-wrapper div {
+    max-width: 100%;
+    outline: none;
+}
+
+.experience .card-wrapper div .date {
+    opacity: .6;
+    font-size: 75%;
+}
+
+.experience .card-wrapper div h3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience .card-wrapper div h3 .sub-title {
+    font-size: 65%;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.experience .card-wrapper div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.experience .card-wrapper div ul li {
+    border-left: 2px solid rgba(128, 128, 128, 0.663);
+    padding-left: 4px;
+    font-size: 85%;
+    list-style: none;
+}
+
+.skills .card-wrapper {
+    justify-content: start;
+}
+
+/* CERTIFICATES */
+.certificates .card-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    overflow: auto;
+}
+
+.certificates .card-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #fff;
+    min-width: 390px;
+    border-radius: 4px;
+    padding: 8px;
+    outline: 1px solid #0000000e;
+}
+
+.certificates .card-wrapper img {
+    margin-top: .4rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 16px 0 0 0;
+    opacity: .7;
+    border-top: 1px solid rgba(128, 128, 128, 0.223);
+    padding-top: 1rem;
+}
+
+/* 
+MOBILE VIEW MOBILE VIEW MOBILE VIEW
+*/
+@media (max-width: 768px) {
+
+    .intro .wrapper,
+    .about-me .wrapper {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .mobile-hero-image .overlay {
+        height: 100%;
+        width: 100%;
+        opacity: .7;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .mobile-intro-text {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: 888;
+        padding: 12px;
+        max-width: 80vw;
+    }
+
+    .mobile-intro-text h1 span {
+        color: orangered;
+    }
+
+    .mobile-intro-text * {
+        text-align: left;
+        color: #fff;
+        margin: 0;
+    }
+
+    .intro-text {
+        display: none;
+    }
+
+    .mobile-intro-text h1,
+    .mobile-intro-text h2 {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .intro-text h1 span,
+    .about-text h2 span,
+    .about-text h1 span {
+        color: orangered;
+    }
+
+    .intro-text .btn {
+        background-color: orangered;
+        color: white;
+        padding: 12px 28px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+    .mobile-hero-image {
+        border-radius: none;
+        position: relative;
+    }
+
+    .mobile-hero-image img {
+        width: 100%;
+        height: 42vh;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .about-me {
+        background-color: #fff;
+        max-height: 28vh;
+    }
+
+    .about-me .overlay div {
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .about-me .overlay div h1 {
+        font-size: 24px;
+    }
+
+    .about-me .overlay div h1 span {
+        color: orangered;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .intro-text,
+    .mobile-hero-image {
+        max-width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .slide-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -80%;
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .slide-menu h1 {
+        font-size: 24px;
+        font-weight: 800;
+        font-style: italic;
+    }
+
+    .slide-menu span {
+        color: orangered;
+    }
+
+    .slide-menu.open {
+        left: 0;
+    }
+
+    .slide-menu .close-btn {
+        display: block;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .slide-menu .close-btn button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 2px 16px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .slide-menu nav a {
+        display: block;
+        padding: 15px 0;
+        text-decoration: none;
+        color: #333;
+        font-size: 32px;
+    }
+
+    .slide-menu nav a:hover {
+        background-color: #f7f7f7;
+    }
+
+    /* Apply border-bottom style to all nav anchor tags except the last one */
+    nav a:not(:last-child) {
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    /* Overlay Styles */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Ensure the slide menu and overlay appear above other content */
+    .slide-menu {
+        z-index: 1000;
+    }
+
+    .section-title {
+        max-width: 85vw;
+    }
+
+    /* EDUCATION */
+
+    .education .card-wrapper div {
+        min-width: 100%;
+    }
+
+    /* CERTIFICATES */
+    .certificates .card-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+        overflow: auto;
+    }
+
+    .skills .card-wrapper {
+        justify-content: normal;
+    }
+
+    .skills .card-wrapper div {
+        max-width: 390px;
+        width:420px;
+        /* width: 390px; */
+    }
+}
